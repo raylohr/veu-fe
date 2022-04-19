@@ -51,7 +51,8 @@ export default function RFQForm() {
     const obj = { ...ip, ...moveInfo };
 
     //write obj to database
-    const result = http.post(config.apiEndpointRFQ, obj);
+    //const result = http.post(config.apiEndpointRFQ, obj);
+    const result = http.post(config.apiEndpoint + config.apiRfq, obj);
     //console.log('Movecart POST result: ', result);
 
     // vavigate to landingpage
