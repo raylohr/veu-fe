@@ -4,7 +4,7 @@ import React from 'react';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import http from '../services/httpService';
-import config from '../config/default.json';
+import config from '../config/config.json';
 
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -52,8 +52,12 @@ export default function RFQForm() {
 
     //write obj to database
     //const result = http.post(config.apiEndpointRFQ, obj);
-    const result = http.post(config.apiEndpoint + config.apiRfq, obj);
-    //console.log('Movecart POST result: ', result);
+    console.log('API URL', process.env.REACT_APP_API_URL);
+    console.log('RFQ API URL', config.apiRfq);
+    const result = http.post(
+      process.env.REACT_APP_API_URL + config.apiRfq,
+      obj
+    );
 
     // vavigate to landingpage
     navigate('/rfqformsubmit', { data: ['a', 'b', 'c'] });

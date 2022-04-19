@@ -1,0 +1,6 @@
+{
+  "apiRfq": "/rfq/",
+  "apiProvider": "/provider/",
+  "apiObjectType": "/objecttype/",
+  "apiRfqProvider": "/rfqprovider/"
+}
