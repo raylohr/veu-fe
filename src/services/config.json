@@ -1,0 +1,7 @@
+{
+  "apiEndpoint"        : "http://localhost:8000/move",
+  "apiEndpointRFQ"     : "http://localhost:8000/move/rfq/",
+  "apiEndpointProvider": "http://localhost:8000/move/provider/",
+  "apiEndpointCustomer": "http://localhost:8000/move/customer/",
+  "apiEndpointRFP"     : "http://localhost:8000/move/rfp/"
+}
