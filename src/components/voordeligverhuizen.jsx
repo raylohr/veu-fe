@@ -1,7 +1,6 @@
 /** @format */
 
 import React from 'react';
-import Select from '../backup/common/select';
 
 export default function Voordeligverhuizen() {
   return (
