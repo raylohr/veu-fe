@@ -1,5 +1,7 @@
+/** @format */
+
 import http from './httpService';
-import config from '../services/config.json';
+import config from '../config/default.json';
 
 const apiEndpoint = config.apiEndpoint + '/provider/';
 console.log('apiEndpoint', apiEndpoint);
