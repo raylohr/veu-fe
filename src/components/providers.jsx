@@ -21,7 +21,7 @@ class Providers extends Component {
 
   render() {
     let count = this.state.providers.length
-    if (count === 0) return <p>geen aanbieders beschikbaar</p>;
+    if (count === 0) return <div>geen aanbieders beschikbaar</div>;
 
     return (
       <div className='p-4'>

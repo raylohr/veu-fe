@@ -4,5 +4,5 @@ import http from './httpService';
 import config from '../config/config.json';
 
 export function getObjecttypes() {
-  return http.get(config.apiEndpoint + config.apiObjectType);
+  return http.get(process.env.REACT_APP_API_URL + config.apiObjectType);
 }

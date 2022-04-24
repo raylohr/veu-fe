@@ -3,8 +3,7 @@
 import http from './httpService';
 import config from '../config/config.json';
 
-const apiEndpoint = config.apiEndpoint + config.apiProvider;
-console.log('apiEndpoint', apiEndpoint);
+const apiEndpoint = process.env.REACT_APP_API_URL + config.apiProvider;
 
 export function getProviders() {
   return http.get(apiEndpoint);

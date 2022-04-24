@@ -13,7 +13,7 @@ class Siteheader extends React.Component {
           <Container>
             <Nav className='me-auto'>
               <Nav.Link className='text-light' href='/'>
-                Offertes Aanvragen
+                Home
               </Nav.Link>
               <Nav.Link className='text-light' href='providers'>
                 Alle Verhuizers

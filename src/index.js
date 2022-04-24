@@ -11,8 +11,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { BrowserRouter } from 'react-router-dom';
 
-console.log('SUPERMAN', process.env.REACT_APP_NAME);
-
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
